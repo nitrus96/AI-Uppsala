@@ -158,10 +158,7 @@ get_probability = function(case, network) {
   p_Pn = network$Pn[,case$Pn + 1]
   p_Te = network$Te[[case$Pn + 1]](case$Te)
   p_VTB = network$VTB[, case$VTB + 1]
-  
   p_TB = network$TB[which(network$TB[,'VTB'] == case$VTB), case$TB +1]
-
-
   p_Sm = network$Sm[, case$Sm + 1]
   P_LC = network$LC[which(network$LC[,'Sm'] == case$Sm), case$LC +1]
 
